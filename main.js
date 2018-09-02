@@ -89,7 +89,7 @@ var AppComponent = /** @class */ (function () {
         // let connection = new Strophe.Connection('https://jwchat.org/http-bind/', {keepalive: true});
         // let connection = new Strophe.Connection('https://server.bosh.name/http-bind');
         var connection = new strophe_js__WEBPACK_IMPORTED_MODULE_1__["Strophe"].Connection('https://conversejs.org/http-bind/');
-        connection.connect('johannes.heucher2@jabber.de', 'U-d3:adx2', function (status, condition) {
+        connection.connect('johannes.heucher2@jabber.de', '', function (status, condition) {
             if (status === strophe_js__WEBPACK_IMPORTED_MODULE_1__["Strophe"].Status.CONNECTED) {
                 console.log('  -> connected');
                 // connection.addHandler((stanza: Element) => {
